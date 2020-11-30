@@ -1,0 +1,277 @@
+html {
+    font-family: Oswald;
+}
+
+a, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body #video{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#nav-bar {
+    font-family: 'Big Shoulders Inline Display', cursive;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+    top: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 200px 100px 100px 150px 175px 1fr 1fr 1fr;
+    grid-template-rows: 75px;
+    grid-template-areas: "header-img home products pro-team contacts . . .";
+}
+
+#nav-bar a {
+    color: gray;
+    transition: 0.2s;
+}
+
+#nav-bar a:hover {
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+@media (max-width: 800px) {
+    #nav-bar {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header-img"
+        "home"
+        "products"
+        "pro-team"
+        "contacts";
+    }
+}
+
+#header-img {
+    grid-area: header-img;
+}
+
+#home {
+    grid-area: home;
+}
+
+#products {
+    grid-area: products;
+}
+
+#pro-team {
+    grid-area: pro-team;
+}
+
+#contacts {
+    grid-area: contacts;
+}
+
+
+#bags {
+    margin: 60px 10px 0 10px;
+    display: grid;
+    border-color: 1px #787878;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+    grid-template-areas:
+    "ax4 bx2 cs2"
+}
+
+@media (max-width: 800px) {
+    #bags {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ax4"
+        "bx2"
+        "cs2"
+    }
+}
+
+.bag-img {
+    height: 250px;
+    transition: 0.2s;
+}
+
+.bag-img:hover {
+    opacity: 0.2;
+    transition: 0.2s;
+}
+
+#ax4 {
+    grid-area: "ax4";
+}
+
+#bx2 {
+    grid-area: "bx2";
+}
+
+#cs2 {
+    grid-area: "cs2";
+}
+
+#pros {
+    grid-area: pros;
+}
+
+#picture {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.product-name {
+    color: #787878;
+    font-size: 22px
+}
+
+.price {
+    font-family: Oswald;
+    color: #309cce;
+    font-size: 20px;;
+}
+
+#pros-header {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#pros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "mcbeth lizotte pierce mcmahon";
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    #pros {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "mcbeth"
+        "lizotte"
+        "pierce"
+        "mcmahon"
+    }
+    #video-window {
+        width: 350px;
+    }
+}
+
+#pros p {
+    border-radius: 5px;
+    background-color: #e6e4e4;
+}
+
+#pros img {
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+#pros img:hover {
+    opacity: 0.1;
+    transition: 0.2s;
+}
+
+#mcbeth {
+    grid-area: "mcbeth";
+    border-radius: 5px;
+}
+
+#lizotte {
+    grid-area: "lizotte";
+    border-radius: 5px;
+}
+
+#pierce {
+    grid-area: "pierce";
+    border-radius: 5px;
+}
+
+#mcmahon {
+    grid-area: "mcmahon";
+    border-radius: 5px;
+}
+
+#video {
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+    padding: 30px;
+}
+
+#footer {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: grid;
+    bottom: 0;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "original-pic"
+    "contacts"
+    "form"
+}
+
+#original-pic {
+    margin-top: 50px;;
+    grid-area: original-pic;
+    text-align: center;
+}
+
+#footer-contacts {
+    grid-area: contacts;
+    align-self: center;
+    justify-self: center;
+    margin-right: 40px;
+}
+
+ #contacts-links li{
+    list-style-type: none;
+    display: inline;
+}
+
+#links {
+    grid-area: links;
+}
+
+#form {
+    text-align: center;
+    align-self: end;
+}
+
+#submit {
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+#button {
+    height: 35px;
+    width: 100px;
+    background-color: rgb(206, 206, 206);
+    color: white;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: 0.15s;
+}
+
+#button:hover {
+    background-color: #787878;
+    transition: 0.15s;
+}
+
+
+
+
